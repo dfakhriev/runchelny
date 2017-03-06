@@ -1,3 +1,6 @@
 [submodule "assets/js/smooth-scroll"]
 	path = assets/js/smooth-scroll
 	url = https://github.com/cferdinandi/smooth-scroll.git
+[submodule "assets/font-awesome"]
+	path = assets/font-awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git

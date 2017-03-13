@@ -3,6 +3,7 @@
 
   <head>
     <title>Камский триатлон 2017 | Бегущие Челны</title>
+    <meta name="robots" content="none">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
@@ -249,146 +250,92 @@
             </div>
             <br>
             <br>
-            <button class="btn btn-danger btn-block btn-lg text-uppercase" data-toggle="modal" data-target="#registration">Регистрация</button>
+            <button class="btn btn-danger btn-block btn-lg text-uppercase disabled" data-toggle="modal" data-target="#registration">Регистрация</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="reg-modal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title text-center">Регистрация</h4>
+    <div class="section content" id="add-my-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Спасибо за регистрацию команды!</h3>
+            <p class="lead">Вы её капитан, но мы пока не знаем, как называется ваша команда и кто ваши соратники.</p>
+            <p class="lead">Заполните эти формы, чтобы завершить процедуру регистрации и уведомить вашу команду об этом.</p>
           </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-md-12">
-                <p class="lead">Выберите дистанцию и формат участия, а также способ оплаты.</p>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-justified" role="tablist">
-                  <li role="presentation" class="active">
-                    <a href="#personal-sprint" aria-controls="personal-sprint" role="tab" data-toggle="tab">Спринт (индивидуально)</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="#team-sprint" aria-controls="team-sprint" role="tab" data-toggle="tab">Спринт (эстафета)</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="#personal-super-sprint" aria-controls="personal-super-sprint" role="tab" data-toggle="tab">Супер-спринт</a>
-                  </li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="personal-sprint">
-                    <p>Пакет участника включает:</p>
-                    <ul>
-                      <li>буклет с информацией о соревновании</li>
-                      <li>гель (спортивное питание)</li>
-                      <li>шапочка для плавательного этапа</li>
-                      <li>номер для велосипеда</li>
-                      <li>нагрудный номер для бегового этапа</li>
-                      <li>пояс для крепления номера на беговом этапе</li>
-                      <li>материалы партнеров соревнования</li>
-                      <li>подарки от партнеров</li>
-                      <li>медаль на финише</li>
-                    </ul>
-                    <p class="">Стоимость участия:
-                      <strike>1500 р.</strike> <span class="text-danger lead">1200 р.</span></p>
-                    <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
-                      <input type="hidden" name="receiver" value="41001984896579">
-                      <input type="hidden" name="formcomment" value="Бегущие Челны">
-                      <input type="hidden" name="short-dest" value="Регистрация на Камский триатлон 2017">
-                      <input type="hidden" name="label" value="$order_id">
-                      <input type="hidden" name="quickpay-form" value="shop">
-                      <input type="hidden" name="targets" value="Индивидуальный спринт в Камском триатлоне 2017">
-                      <input type="hidden" name="sum" value="1200" data-type="number">
-                      <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="false">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="paymentType" value="AC">Банковская карта</label>
-                        <label>
-                          <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
-                      </div>
-                      <input type="submit" value="Зарегистрироваться" class="btn btn-danger"> </form>
+          <div class="col-sm-6 col-md-4">
+            <div id="mlb2-4454161" class="ml-subscribe-form ml-subscribe-form-4454161">
+              <div class="">
+                <div class="ml-block-success alert alert-success" role="alert" style="display:none">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>Отлично, 2-й участник команды зарегистрирован! Остался еще один.</div>
+                <form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/y6w3r4" data-id="336915" data-code="y6w3r4"
+                    method="POST" target="_blank">
+                  <div class="subscribe-form">
+                    <h4 class="text-center">2-й участник</h4>
+                    <div class="">
+                      <div class="form-group ml-field-name">
+                        <input type="text" name="fields[name]" class="form-control has-feedback" placeholder="Имя" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                      <div class="form-group ml-field-last_name">
+                        <input type="text" name="fields[last_name]" class="form-control has-feedback" placeholder="Фамилия" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                      <div class="form-group ml-field-birthday">
+                        <input type="date" name="fields[birthday]" data-inputmask="'mask':'d-m-y', 'placeholder':'dd.mm.yyyy'" class="form-control has-feedback" placeholder="Дата рождения" spellcheck="false" autocapitalize="off" autocorrect="off" min="01.01.1999" required> </div>
+                      <div class="form-group ml-field-email">
+                        <input type="email" name="fields[email]" class="form-control has-feedback" placeholder="Адрес электронной почты" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off"> </div>
+                      <div class="form-group ml-field-phone">
+                        <input type="tel" name="fields[phone]" class="form-control has-feedback" placeholder="Телефон" value="+7" spellcheck="false" autocapitalize="off" autocorrect="off" required></div>
+                      <div class="form-group ml-field-team ml-validate-required">
+                        <input type="text" name="fields[team]" class="form-control has-feedback" placeholder="Название команды" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <button type="submit" class="primary btn btn-danger">Зарегистрировать</button>
+                    <button style="display: none;" type="button" class="btn btn-link disabled loading"><i class="fa fa-spinner fa-pulse fa-lg fa-fw"></i></button>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="team-sprint">
-                    <p>Командный пакет включает:</p>
-                    <ul>
-                      <li>буклет с информацией о соревновании для каждого члена команды</li>
-                      <li>гель (спортивное питание)</li>
-                      <li>шапочка для плавательного этапа</li>
-                      <li>номер для велосипеда</li>
-                      <li>нагрудный номер для бегового этапа</li>
-                      <li>пояс для крепления номера на беговом этапе</li>
-                      <li>материалы партнеров соревнования</li>
-                      <li>подарки от партнеров</li>
-                      <li>медаль на финише для каждого члена команды</li>
-                      <li>кубок, если команда победит</li>
-                    </ul>
-                    <p class="">Стоимость командного участия:
-                      <strike>3600 р.</strike> <span class="text-danger lead">3000 р.</span></p>
-                    <div class="well well-sm">Внимание! Регистрирующий является капитаном команды и оплачивает стоимость командного участия.</div>
-                    <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
-                      <input type="hidden" name="receiver" value="41001984896579">
-                      <input type="hidden" name="formcomment" value="Бегущие Челны">
-                      <input type="hidden" name="short-dest" value="Регистрация на Камский триатлон 2017">
-                      <input type="hidden" name="label" value="$order_id">
-                      <input type="hidden" name="successURL" value="http://runchelny.ru/kama-triathlon-team-registration.html#add-my-team">
-                      <input type="hidden" name="quickpay-form" value="shop">
-                      <input type="hidden" name="targets" value="Командный спринт в Камском триатлоне 2017">
-                      <input type="hidden" name="sum" value="3000" data-type="number">
-                      <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="false">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="paymentType" value="AC">Банковская карта</label>
-                        <label>
-                          <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
-                      </div>
-                      <input type="submit" value="Зарегистрировать команду" class="btn btn-danger"> </form>
+                  </form>
+                  <script>
+                    function ml_webform_success_4454161() {
+                      var $ = ml_jQuery || jQuery;
+                      $('.ml-subscribe-form-4454161 .ml-block-success').show();
+                      $('.ml-subscribe-form-4454161 .ml-block-form').hide();
+                    };
+                  </script>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div id="mlb2-4454399" class="ml-subscribe-form ml-subscribe-form-4454399">
+              <div class="">
+                <div class="ml-block-success alert alert-success" role="alert" style="display:none">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>Ура! Команда собрана под руководством настоящего лидера.</div>
+                <form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/k7c1g0" data-id="336915" data-code="k7c1g0"
+                    method="POST" target="_blank">
+                  <div class="subscribe-form">
+                    <h4 class="text-center">3-й участник</h4>
+                    <div class="">
+                      <div class="form-group ml-field-name">
+                        <input type="text" name="fields[name]" class="form-control has-feedback" placeholder="Имя" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                      <div class="form-group ml-field-last_name">
+                        <input type="text" name="fields[last_name]" class="form-control has-feedback" placeholder="Фамилия" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                      <div class="form-group ml-field-birthday">
+                        <input type="date" name="fields[birthday]" data-inputmask="'mask':'d-m-y', 'placeholder':'dd.mm.yyyy'" class="form-control has-feedback" placeholder="Дата рождения" spellcheck="false" autocapitalize="off" autocorrect="off" min="01.01.1999" required> </div>
+                      <div class="form-group ml-field-email">
+                        <input type="email" name="fields[email]" class="form-control has-feedback" placeholder="Адрес электронной почты" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off"> </div>
+                      <div class="form-group ml-field-phone">
+                        <input type="tel" name="fields[phone]" class="form-control has-feedback" placeholder="Телефон" value="+7" spellcheck="false" autocapitalize="off" autocorrect="off" required></div>
+                      <div class="form-group ml-field-team ml-validate-required">
+                        <input type="text" name="fields[team]" class="form-control has-feedback" placeholder="Название команды" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                    </div>
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <button type="submit" class="primary btn btn-danger">Зарегистрировать</button>
+                    <button style="display: none;" type="button" class="btn btn-link disabled loading"><i class="fa fa-spinner fa-pulse fa-lg fa-fw"></i></button>
                   </div>
-                  <div role="tabpanel" class="tab-pane fade" id="personal-super-sprint">
-                    <p>Пакет участника включает:</p>
-                    <ul>
-                      <li>буклет с информацией о соревновании</li>
-                      <li>гель (спортивное питание)</li>
-                      <li>шапочка для плавательного этапа</li>
-                      <li>номер для велосипеда</li>
-                      <li>нагрудный номер для бегового этапа</li>
-                      <li>пояс для крепления номера на беговом этапе</li>
-                      <li>материалы партнеров соревнования</li>
-                      <li>подарки от партнеров</li>
-                      <li>медаль на финише</li>
-                    </ul>
-                    <p class="">Стоимость участия:
-                      <strike>1000 р.</strike> <span class="text-danger lead">800 р.</span></p>
-                    <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
-                      <input type="hidden" name="receiver" value="41001984896579">
-                      <input type="hidden" name="formcomment" value="Бегущие Челны">
-                      <input type="hidden" name="short-dest" value="Регистрация на Камский триатлон 2017">
-                      <input type="hidden" name="label" value="$order_id">
-                      <input type="hidden" name="quickpay-form" value="shop">
-                      <input type="hidden" name="targets" value="Индивидуальный супер-спринт в Камском триатлоне 2017">
-                      <input type="hidden" name="sum" value="800" data-type="number">
-                      <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="false">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="paymentType" value="AC">Банковская карта</label>
-                        <label>
-                          <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
-                      </div>
-                      <input type="submit" value="Зарегистрироваться" class="btn btn-danger"> </form>
-                  </div>
-                </div>
+                  </form>
+                  <script>
+                    function ml_webform_success_4454399() {
+                      var $ = ml_jQuery || jQuery;
+                      $('.ml-subscribe-form-4454399 .ml-block-success').show();
+                      $('.ml-subscribe-form-4454399 .ml-block-form').hide();
+                    };
+                  </script>
               </div>
             </div>
           </div>
@@ -520,6 +467,7 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="//static.mailerlite.com/js/w/webforms.min.js?v98f07ba3d85ef7eb5404a058e826ec34"></script>
     <script>
       smoothScroll.init();
     </script>

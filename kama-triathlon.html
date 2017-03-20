@@ -294,6 +294,54 @@
                       <li>медаль на финише</li>
                     </ul>
                     <p class="">Стоимость участия: <span class="lead">1500 р.</span></p>
+                    <div id="mlb2-4391083" class="ml-subscribe-form ml-subscribe-form-4391083">
+                      <div class="">
+                        <div class="ml-block-success alert alert-info" role="alert" style="display:none"><strong>Спасибо!</strong> Ваша заявка принята. Выберите ниже способ оплаты и завершите регистрацию, оплатив участие. На указанную почту придет чек оплаты, являющийся подтверждением успешной регистрации.</div>
+                        <form class="ml-block-form"
+                            action="//app.mailerlite.com/webforms/submit/l5n4w9" data-id="328743" data-code="l5n4w9" method="POST" target="_blank">
+                          <div class="subscribe-form">
+                            <div class="row">
+                              <div class="form-group ml-field-name col-sm-4">
+                                <input type="text" name="fields[name]" class="form-control has-feedback" placeholder="Имя" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-last_name col-sm-4">
+                                <input type="text" name="fields[last_name]" class="form-control has-feedback" placeholder="Фамилия" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-birthday col-sm-4">
+                                <input type="date" name="fields[birthday]" data-inputmask="'mask':'d-m-y', 'placeholder':'dd.mm.yyyy'" class="form-control has-feedback" placeholder="Дата рождения" value="" spellcheck="false" autocapitalize="off" autocorrect="off"
+                                    required>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-email col-sm-8">
+                                <input type="email" name="fields[email]" class="form-control has-feedback" placeholder="Адрес электронной почты" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off"
+                                    required>
+                              </div>
+                              <div class="form-group ml-field-phone col-sm-4">
+                                <input type="tel" name="fields[phone]" class="form-control has-feedback" placeholder="Телефон" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-state col-sm-6">
+                                <input type="text" name="fields[state]" class="form-control has-feedback" placeholder="Регион / область" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-city col-sm-6">
+                                <input type="text" name="fields[city]" class="form-control has-feedback" placeholder="Город" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" required>Я даю согласие на обработку, хранение и использование персональных данных.</label>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1" />
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться<span style="display: none;" class="loading">&nbsp;<i class="fa fa-circle-o-notch fa-spin fa-lg fa-fw"></i></span></button>
+                          </div>
+                          </form>
+                          <script>
+                            function ml_webform_success_4391083() {
+                              var $ = ml_jQuery || jQuery;
+                              $('.ml-subscribe-form-4391083 .ml-block-success').show();
+                              $('.ml-subscribe-form-4391083 .ml-block-form').hide();
+                            }
+                          </script>
+                      </div>
+                    </div>
+                    <hr>
                     <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
                       <input type="hidden" name="receiver" value="41001984896579">
                       <input type="hidden" name="formcomment" value="Бегущие Челны">
@@ -302,17 +350,18 @@
                       <input type="hidden" name="quickpay-form" value="shop">
                       <input type="hidden" name="targets" value="Индивидуальный спринт в Камском триатлоне 2017">
                       <input type="hidden" name="sum" value="1500" data-type="number">
-                      <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="true">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="paymentType" value="AC">Банковская карта</label>
-                        <label>
-                          <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
-                      </div>
-                      <input type="submit" value="Зарегистрироваться" class="btn btn-danger"> </form>
+                      <input type="hidden" name="successURL" value="runchelny.ru/kama-triathlon.html">
+                        <input type="hidden" name="need-fio" value="true">
+                        <input type="hidden" name="need-email" value="false">
+                        <input type="hidden" name="need-phone" value="false">
+                        <input type="hidden" name="need-address" value="false">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="paymentType" value="AC">Банковская карта</label>
+                          <label>
+                            <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
+                        </div>
+                        <input type="submit" value="Оплатить участие" class="btn btn-success"> </form>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="team-sprint">
                     <p>Командный пакет включает:</p>
@@ -329,7 +378,58 @@
                       <li>кубок, если команда победит</li>
                     </ul>
                     <p class="">Стоимость командного участия: <span class="lead">3600 р.</span></p>
-                    <div class="well well-sm">Внимание! Регистрирующий является капитаном команды и оплачивает стоимость командного участия.</div>
+                    <div class="well well-sm"><strong>Внимание!</strong> Регистрирующий является капитаном команды и оплачивает стоимость командного участия.</div>
+                    <div id="mlb2-4517251" class="ml-subscribe-form ml-subscribe-form-4517251">
+                      <div class="">
+                        <div class="ml-block-success alert alert-info" role="alert" style="display:none"><strong>Спасибо!</strong> Ваша заявка принята. Выберите ниже способ оплаты и завершите регистрацию команды. На указанную почту придет чек оплаты, являющийся подтверждением успешной регистрации.
+                          <br>P.S. После оплаты останется заявить остальных членов команды. Заранее подготовьте всю информацию о них!</div>
+                        <form class="ml-block-form" action="//app.mailerlite.com/webforms/submit/x1e4i7" data-id="344699" data-code="x1e4i7" method="POST" target="_blank">
+                          <div class="subscribe-form">
+                            <div class="row">
+                              <div class="form-group ml-field-name col-sm-4">
+                                <input type="text" name="fields[name]" class="form-control has-feedback" placeholder="Имя" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-last_name col-sm-4">
+                                <input type="text" name="fields[last_name]" class="form-control has-feedback" placeholder="Фамилия" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-birthday col-sm-4">
+                                <input type="date" name="fields[birthday]" data-inputmask="'mask':'d-m-y', 'placeholder':'dd.mm.yyyy'" class="form-control has-feedback" placeholder="Дата рождения" value="" spellcheck="false" autocapitalize="off" autocorrect="off"
+                                    required>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-email col-sm-5">
+                                <input type="email" name="fields[email]" class="form-control has-feedback" placeholder="Адрес электронной почты" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off"
+                                    required>
+                              </div>
+                              <div class="form-group ml-field-phone col-sm-4">
+                                <input type="tel" name="fields[phone]" class="form-control has-feedback" placeholder="Телефон" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-team col-sm-3">
+                                <input type="text" name="fields[team]" class="form-control" placeholder="Команда" value="" spellcheck="false" autocapitalize="off" autocorrect="off"> </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-state col-sm-6">
+                                <input type="text" name="fields[state]" class="form-control has-feedback" placeholder="Регион / область" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required>
+                              </div>
+                              <div class="form-group ml-field-city col-sm-6">
+                                <input type="text" name="fields[city]" class="form-control has-feedback" placeholder="Город" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" required>Я даю согласие на обработку, хранение и использование персональных данных.</label>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1" />
+                            <button type="submit" class="btn btn-primary">Зарегистрировать команду<span style="display: none;" class="loading">&nbsp;<i class="fa fa-circle-o-notch fa-spin fa-lg fa-fw"></i></span></button>
+                          </div>
+                        </form>
+                        <script>
+                          function ml_webform_success_4517251() {
+                            var $ = ml_jQuery || jQuery;
+                            $('.ml-subscribe-form-4517251 .ml-block-success').show();
+                            $('.ml-subscribe-form-4517251 .ml-block-form').hide();
+                          }
+                        </script>
+                      </div>
+                    </div>
+                    <hr>
                     <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
                       <input type="hidden" name="receiver" value="41001984896579">
                       <input type="hidden" name="formcomment" value="Бегущие Челны">
@@ -339,17 +439,18 @@
                       <input type="hidden" name="quickpay-form" value="shop">
                       <input type="hidden" name="targets" value="Командный спринт в Камском триатлоне 2017">
                       <input type="hidden" name="sum" value="3600" data-type="number">
+                      <input type="hidden" name="successURL" value="runchelny.ru/kama-triathlon-team-registration.html">
                       <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="true">
+                      <input type="hidden" name="need-email" value="false">
+                      <input type="hidden" name="need-phone" value="false">
+                      <input type="hidden" name="need-address" value="false">
                       <div class="radio">
                         <label>
                           <input type="radio" name="paymentType" value="AC">Банковская карта</label>
                         <label>
                           <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
                       </div>
-                      <input type="submit" value="Зарегистрировать команду" class="btn btn-danger"> </form>
+                      <input type="submit" value="Оплатить участие" class="btn btn-success"> </form>
                   </div>
                   <div role="tabpanel" class="tab-pane fade" id="personal-super-sprint">
                     <p>Пакет участника включает:</p>
@@ -365,6 +466,51 @@
                       <li>медаль на финише</li>
                     </ul>
                     <p class="">Стоимость участия: <span class="lead">1000 р.</span></p>
+                    <div id="mlb2-4517539" class="ml-subscribe-form ml-subscribe-form-4517539">
+                      <div class="">
+                        <div class="ml-block-success alert alert-info" role="alert" style="display:none"><strong>Спасибо!</strong> Ваша заявка принята. Выберите ниже способ оплаты и завершите регистрацию, оплатив участие. На указанную почту придет чек оплаты, являющийся подтверждением успешной регистрации.</div>
+                        <form class="ml-block-form"
+                            action="//app.mailerlite.com/webforms/submit/x4p8b3" data-id="344747" data-code="x4p8b3" method="POST" target="_blank">
+                          <div class="subscribe-form">
+                            <div class="row">
+                              <div class="form-group ml-field-name col-sm-4">
+                                <input type="text" name="fields[name]" class="form-control has-feedback" placeholder="Имя" value="" autocomplete="name" x-autocompletetype="name" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-last_name col-sm-4">
+                                <input type="text" name="fields[last_name]" class="form-control has-feedback" placeholder="Фамилия" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-birthday col-sm-4">
+                                <input type="date" name="fields[birthday]" data-inputmask="'mask':'d-m-y', 'placeholder':'dd.mm.yyyy'" class="form-control has-feedback" placeholder="Дата рождения" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-email col-sm-8">
+                                <input type="email" name="fields[email]" class="form-control has-feedback" placeholder="Адрес электронной почты" value="" autocomplete="email" x-autocompletetype="email" spellcheck="false" autocapitalize="off" autocorrect="off" required>
+                              </div>
+                              <div class="form-group ml-field-phone col-sm-4">
+                                <input type="tel" name="fields[phone]" class="form-control has-feedback" placeholder="Телефон" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group ml-field-state col-sm-6">
+                                <input type="text" name="fields[state]" class="form-control has-feedback" placeholder="Регион / область" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                              <div class="form-group ml-field-city col-sm-6">
+                                <input type="text" name="fields[city]" class="form-control has-feedback" placeholder="Город" value="" spellcheck="false" autocapitalize="off" autocorrect="off" required> </div>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" required>Я даю согласие на обработку, хранение и использование персональных данных.</label>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1" />
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться<span style="display: none;" class="loading">&nbsp;<i class="fa fa-circle-o-notch fa-spin fa-lg fa-fw"></i></span></button>
+                          </div>
+                          </form>
+                          <script>
+                            function ml_webform_success_4517539() {
+                              var $ = ml_jQuery || jQuery;
+                              $('.ml-subscribe-form-4517539 .ml-block-success').show();
+                              $('.ml-subscribe-form-4517539 .ml-block-form').hide();
+                            }
+                          </script>
+                      </div>
+                    </div>
                     <form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml">
                       <input type="hidden" name="receiver" value="41001984896579">
                       <input type="hidden" name="formcomment" value="Бегущие Челны">
@@ -373,17 +519,18 @@
                       <input type="hidden" name="quickpay-form" value="shop">
                       <input type="hidden" name="targets" value="Индивидуальный супер-спринт в Камском триатлоне 2017">
                       <input type="hidden" name="sum" value="1000" data-type="number">
+                      <input type="hidden" name="successURL" value="runchelny.ru/kama-triathlon.html">
                       <input type="hidden" name="need-fio" value="true">
-                      <input type="hidden" name="need-email" value="true">
-                      <input type="hidden" name="need-phone" value="true">
-                      <input type="hidden" name="need-address" value="true">
+                      <input type="hidden" name="need-email" value="false">
+                      <input type="hidden" name="need-phone" value="false">
+                      <input type="hidden" name="need-address" value="false">
                       <div class="radio">
                         <label>
                           <input type="radio" name="paymentType" value="AC">Банковская карта</label>
                         <label>
                           <input type="radio" name="paymentType" value="PC">Яндекс.Деньги</label>
                       </div>
-                      <input type="submit" value="Зарегистрироваться" class="btn btn-danger"> </form>
+                      <input type="submit" value="Зарегистрироваться" class="btn btn-success"> </form>
                   </div>
                 </div>
               </div>
@@ -534,6 +681,7 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="//static.mailerlite.com/js/w/webforms.min.js?v98f07ba3d85ef7eb5404a058e826ec34"></script>
     <script>
       smoothScroll.init();
     </script>
